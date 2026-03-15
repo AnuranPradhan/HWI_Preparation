@@ -29,9 +29,9 @@ public class MinShiftCards {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
         List<String> cards = Arrays.asList(sc.nextLine().split(" "));
-        int s = sc.nextInt();
+        int s = Integer.parseInt(sc.nextLine());
         String target = sc.nextLine();
 
         System.out.println(minShiftCards(cards, s, target));
